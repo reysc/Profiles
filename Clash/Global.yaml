@@ -286,10 +286,10 @@ rules:
   # Global Area Network
 
   # (Streaming Media)
-  - RULE-SET,Streaming,Streaming
+#  - RULE-SET,Streaming,Streaming
 
   # (StreamingSE)
-  - RULE-SET,StreamingSE,StreamingSE
+#  - RULE-SET,StreamingSE,StreamingSE
 
   # (DNS Cache Pollution) / (IP Blackhole) / (Region-Restricted Access Denied) / (Network Jitter)
   - RULE-SET,Global,PROXY
