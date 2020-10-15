@@ -211,20 +211,20 @@ proxy-groups:
       - DIRECT
 
   # 国际流媒体服务
-  - name: "Streaming"
-    type: select
-    proxies:
-      - PROXY
-      - HK
-      - US
-      - SG
+#  - name: "Streaming"
+#    type: select
+#    proxies:
+#      - PROXY
+#      - HK
+#      - US
+#      - SG
 
   # 中国流媒体服务（面向海外版本）
-  - name: "StreamingSE"
-    type: select
-    proxies:
-      - DIRECT
-      - HK
+#  - name: "StreamingSE"
+#    type: select
+#    proxies:
+#      - DIRECT
+#      - HK
 
 # 关于 Rule Provider 请查阅：https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 
