@@ -167,13 +167,13 @@ proxies:
 
   # vmess
   # cipher support auto/aes-128-gcm/chacha20-poly1305/none
-  - name: "vmess"
-    type: vmess
-    server: server
-    port: 443
-    uuid: uuid
-    alterId: 32
-    cipher: auto
+#  - name: "vmess"
+#    type: vmess
+#    server: server
+#    port: 443
+#    uuid: uuid
+#    alterId: 32
+#    cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: true
@@ -183,13 +183,13 @@ proxies:
     # ws-headers:
     #   Host: v2ray.com
   
-  - name: "vmess-http"
-    type: vmess
-    server: server
-    port: 443
-    uuid: uuid
-    alterId: 32
-    cipher: auto
+#  - name: "vmess-http"
+#    type: vmess
+#    server: server
+#    port: 443
+#    uuid: uuid
+#    alterId: 32
+#    cipher: auto
     # udp: true
     # network: http
     # http-opts:
@@ -202,10 +202,10 @@ proxies:
     #   #     - keep-alive
 
   # socks5
-  - name: "socks"
-    type: socks5
-    server: server
-    port: 443
+#  - name: "socks"
+#    type: socks5
+#    server: server
+#    port: 443
     # username: username
     # password: password
     # tls: true
@@ -213,10 +213,10 @@ proxies:
     # udp: true
 
   # http
-  - name: "http"
-    type: http
-    server: server
-    port: 443
+#  - name: "http"
+#    type: http
+#    server: server
+#    port: 443
     # username: username
     # password: password
     # tls: true # https
@@ -224,21 +224,21 @@ proxies:
 
   # Snell
   # Beware that there's currently no UDP support yet
-  - name: "snell"
-    type: snell
-    server: server
-    port: 44046
-    psk: yourpsk
+#  - name: "snell"
+#    type: snell
+#    server: server
+#    port: 44046
+#    psk: yourpsk
     # obfs-opts:
       # mode: http # or tls
       # host: bing.com
 
   # Trojan
-  - name: "trojan"
-    type: trojan
-    server: server
-    port: 443
-    password: yourpsk
+#  - name: "trojan"
+#    type: trojan
+#    server: server
+#    port: 443
+#    password: yourpsk
     # udp: true
     # sni: example.com # aka server name
     # alpn:
@@ -254,15 +254,15 @@ proxies:
   # The supported supported protocols:
   #   origin auth_sha1_v4 auth_aes128_md5
   #   auth_aes128_sha1 auth_chain_a auth_chain_b  
-  - name: "ssr"
-    type: ssr
-    server: server
-    port: 443
-    cipher: chacha20-ietf
-    password: "password"
-    obfs: tls1.2_ticket_auth
-    protocol: auth_sha1_v4
-    # obfs-param: domain.tld
+#  - name: "ssr"
+#    type: ssr
+#    server: server
+#    port: 443
+#    cipher: chacha20-ietf
+#    password: "password"
+#    obfs: tls1.2_ticket_auth
+#    protocol: auth_sha1_v4
+#    # obfs-param: domain.tld
     # protocol-param: "#"
     # udp: true
 
@@ -272,8 +272,6 @@ proxy-groups:
   - name: "relay"
     type: relay
     proxies:
-      - http
-      - vmess
       - ss1
       - ss2
 
@@ -283,7 +281,6 @@ proxy-groups:
     proxies:
       - ss1
       - ss2
-      - vmess1
     # tolerance: 150
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -294,7 +291,6 @@ proxy-groups:
     proxies:
       - ss1
       - ss2
-      - vmess1
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 
@@ -304,7 +300,6 @@ proxy-groups:
     proxies:
       - ss1
       - ss2
-      - vmess1
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 
@@ -315,7 +310,6 @@ proxy-groups:
     proxies:
       - ss1
       - ss2
-      - vmess1
       - auto
   
   - name: UseProvider
